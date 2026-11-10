@@ -71,7 +71,7 @@ def metric_row(split_name, y_true, y_pred, y_score=None):
     auc = (
         roc_auc_score(y_true, y_score)
         if y_score is not None and np.unique(y_true).size == 2
-        else np.nan
+        else None
     )
     return {
         "split": split_name,
@@ -277,7 +277,7 @@ def run_physics_threshold(data):
         ),
     }
     (REPORTS / "physics_threshold_summary.json").write_text(
-        json.dumps(summary, indent=2), encoding="utf-8"
+        json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8"
     )
 
     fig, ax = plt.subplots(figsize=(6, 5))

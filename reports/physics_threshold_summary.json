@@ -19,7 +19,7 @@
     "precision": 0.7368421052631579,
     "recall": 0.6666666666666666,
     "f1": 0.7,
-    "roc_auc": NaN
+    "roc_auc": null
   },
   "test_metrics": {
     "split": "test",
@@ -29,7 +29,7 @@
     "precision": 0.6,
     "recall": 0.2,
     "f1": 0.3,
-    "roc_auc": NaN
+    "roc_auc": null
   },
   "test_confusion_matrix_order": [
     "actual_no_fault",
