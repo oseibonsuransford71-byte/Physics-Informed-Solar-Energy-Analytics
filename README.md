@@ -114,3 +114,24 @@ Only after personally running and understanding the work:
 > Built a physics-informed Python workflow on simulated photovoltaic operating data to forecast next-hour power and classify injected fault events; implemented chronological validation, regression and classification metrics, confusion-matrix analysis and permutation-based feature interpretation.
 
 Do not claim real solar-farm data, deployment, energy savings or validated real-world fault detection.
+
+## Additional research experiments: ablation and physics threshold
+
+A second script adds a controlled feature-ablation experiment and a
+physics-based shortfall detector with validation-only threshold selection:
+
+```powershell
+python src/run_research_experiments.py
+python -m pytest -q
+```
+
+The ablation excludes `actual_power_kw` and `performance_ratio` from the
+daylight fault classifier. The threshold detector calculates percentage
+shortfall from expected and actual power, selects its threshold using
+validation F1 only, and evaluates the frozen threshold on the later test
+period. Because it requires actual output, it is **retrospective fault
+detection, not early-warning prediction**.
+
+See [the research experiment report](reports/RESEARCH_EXPERIMENTS.md) for
+the split design, historical author-run results requiring reproduction,
+fault-type distribution shift, interpretation and limitations.

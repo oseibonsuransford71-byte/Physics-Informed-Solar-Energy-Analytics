@@ -1,0 +1,3 @@
+split,records,actual_faults,accuracy,precision,recall,f1,roc_auc,model
+test,1595,45,0.9717868338557993,0.0,0.0,0.0,,Majority baseline
+test,1595,45,0.9680250783699059,0.125,0.022222222222222223,0.03773584905660377,0.5009605734767025,Random Forest (environmental ablation)

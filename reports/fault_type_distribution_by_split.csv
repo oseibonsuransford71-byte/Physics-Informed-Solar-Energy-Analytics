@@ -1,0 +1,4 @@
+split,inverter_derating,partial_shading,soiling
+test,1,7,37
+train,41,15,27
+validation,1,15,5

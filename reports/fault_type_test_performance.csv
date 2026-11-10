@@ -1,0 +1,4 @@
+fault_type,test_fault_records,detected,missed,recall,mean_shortfall_percent
+inverter_derating,1,0,1,0.0,18.63869700234489
+partial_shading,7,4,3,0.5714285714285714,23.700563270814673
+soiling,37,5,32,0.13513513513513514,16.840553177692055

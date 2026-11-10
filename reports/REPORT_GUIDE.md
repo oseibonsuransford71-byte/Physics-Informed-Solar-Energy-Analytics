@@ -11,3 +11,14 @@
 - `figures/fault_permutation_importance.png`: permutation-importance chart.
 
 All outputs are based on simulated data. The injected fault labels and derived performance ratio make the classification task a controlled teaching example, not a validated real-world fault detector.
+
+- `RESEARCH_EXPERIMENTS.md`: experiment design, feature-ablation interpretation,
+  validation-selected physics threshold, temporal fault-type distribution shift
+  and limitations.
+- `fault_detection_metrics_ablation.csv` and related `_ablation` files:
+  daylight classifier after excluding actual output and performance ratio.
+- `physics_threshold_metrics.csv`, `physics_threshold_summary.json` and related
+  files: validation-selected shortfall threshold and later test evaluation.
+- `fault_distribution_by_split.csv` and `fault_type_test_performance.csv`:
+  class prevalence and per-type test results. Interpret small class supports
+  cautiously.
