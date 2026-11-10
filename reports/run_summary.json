@@ -1,0 +1,12 @@
+{
+  "rows": 17520,
+  "start": "2024-01-01 00:00:00",
+  "end": "2025-12-30 23:00:00",
+  "fault_rate_all_hours": 0.02060502283105023,
+  "fault_rate_daylight": 0.018683385579937303,
+  "forecast_train_rows": 13996,
+  "forecast_test_rows": 3499,
+  "fault_train_rows": 6380,
+  "fault_test_rows": 1595,
+  "synthetic_data": true
+}
